@@ -37,16 +37,16 @@ public:
 	Dragon(string s, string n, int f) : skinColor_(s), nativeRange_(n), firePower_(f) {};
 	/*
 	* 
-	* abstract train method 
+	* Abstract train method 
 	* 
 	*/
 	virtual void train() = 0;
 	/*
 	* 
-	* 
+	* Print method that prints the attributes of a dragon
 	* 
 	*/
-	virtual void print() {
+	void print() {
 		cout << "\nSkin Color: " << skinColor_ << "\nNative Range: " << nativeRange_ << "\nFire Power: " << firePower_ << endl;
 	}
 	

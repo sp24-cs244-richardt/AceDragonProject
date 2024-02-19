@@ -21,6 +21,8 @@
 
 #include "CommonWelsh.h"
 
+int CommonWelsh::trustFactor_ = 5;
+
 /*
 *
 * Train method for the Common Welsh
@@ -29,6 +31,7 @@
 void CommonWelsh::train() {
 	firePower_ += trustFactor_;
 	if (firePower_ > 100) { firePower_ = 100; }
-	trustFactor_ += (trustFactor_ % 50) + 5;
+	trustFactor_ += 5;
+	if (trustFactor_ > 50) { trustFactor_ = 5; }
 }
 

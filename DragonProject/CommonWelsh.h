@@ -25,7 +25,7 @@ class CommonWelsh :
     public Dragon
 {
 private: 
-    int trustFactor_ = 5;
+    static int trustFactor_;
 
 public:
     /*
