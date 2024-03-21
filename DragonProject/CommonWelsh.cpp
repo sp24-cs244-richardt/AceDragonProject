@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -33,5 +33,6 @@ void CommonWelsh::train() {
 	if (firePower_ > 100) { firePower_ = 100; }
 	trustFactor_ += 5;
 	if (trustFactor_ > 50) { trustFactor_ = 5; }
+	health_ -= 20;
 }
 

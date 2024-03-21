@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ public:
     * Initialized constructor using constructor of base class
     * 
     */
-    ChineseFireball() : Dragon("Scarlet", "China", (rand() % 50) + 50) {};
+    ChineseFireball() : Dragon("Scarlet", "China", (rand() % 50) + 50, (rand() % 36)+50, (rand()%31) + 25) {};
     /*
     * 
     * Overriden train method

@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ public:
     * Initialized constructor using constructor of base class
     *
     */
-    HungarianHorntail() : Dragon("Black", "Hungary", (rand() % 75) + 10) {};
+    HungarianHorntail() : Dragon("Black", "Hungary", (rand() % 75) + 10, (rand() % 31) + 60, (rand() % 21) + 75) {};
     /*
     * 
     * Overriden train method

@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -32,9 +32,11 @@ protected:
 	string skinColor_;
 	string nativeRange_;
 	int firePower_;
+	int health_;
+	int charisma_;
 
 public:
-	Dragon(string s, string n, int f) : skinColor_(s), nativeRange_(n), firePower_(f) {};
+	Dragon(string s, string n, int f, int h, int c) : skinColor_(s), nativeRange_(n), firePower_(f), health_(h), charisma_(c) {};
 	/*
 	* 
 	* Abstract train method 
@@ -47,8 +49,58 @@ public:
 	* 
 	*/
 	void print() {
-		cout << "\nSkin Color: " << skinColor_ << "\nNative Range: " << nativeRange_ << "\nFire Power: " << firePower_ << endl;
+		cout << "\nSkin Color: " << skinColor_ << "\nNative Range: " << nativeRange_ << "\nFire Power: " << firePower_ << "\nHealth: " << health_ << "\nCharisma: " << charisma_ << endl;
 	}
+	/*
+	* 
+	* Gets the fire power of a dragon
+	* 
+	*/
+	int getFirePower() const {
+        return firePower_;
+    }
+	/*
+	* 
+	* Gets the health of a dragon
+	* 
+	*/
+    int getHealth() const {
+        return health_;
+    }
+	/*
+	* 
+	* Gets the charisma of a dragon
+	* 
+	*/
+    int getCharisma() const {
+        return charisma_;
+    }
+	/*
+	* 
+	* Sets the charisma of a dragon
+	* 
+	*/
+	void setCharisma(int newCharisma) {
+		charisma_ = newCharisma;
+	}
+	/*
+	* 
+	* Sets the health of a dragon
+	* 
+	*/
+    void setHealth(int newHealth) {
+        health_ = newHealth;
+    }
+	/*
+	* 
+	* Increases the charisma of a dragon
+	* 
+	*/
+    void increaseCharisma() {
+        charisma_ += 5;
+        if (charisma_ > 100)
+            charisma_ = 100;
+    }
 	
 };
 

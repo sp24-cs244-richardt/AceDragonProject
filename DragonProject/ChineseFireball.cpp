@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -29,4 +29,5 @@
 void ChineseFireball::train() {
 	firePower_ += (rand() % 15) + 10;
 	if (firePower_ > 100) { firePower_ = 100; }
+	health_ -= 20;
 }

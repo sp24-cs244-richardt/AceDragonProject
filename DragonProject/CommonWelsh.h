@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: Dragon Project
 // Author: Ace Martin
-// Date: 2/19/24
+// Date: 3/21/24
 //
 // -----------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ public:
     * Initialized constructor using constructor of base class
     *
     */
-    CommonWelsh() : Dragon("Green", "Wales", (rand() % 50) + 10) {};
+    CommonWelsh() : Dragon("Green", "Wales", (rand() % 50) + 10, (rand() % 6) + 95, (rand() % 11) + 45) {};
     /*
     * 
     * Overriden train method
